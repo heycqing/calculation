@@ -30,10 +30,10 @@
  `var calc = require('calculate');`
 
 ```js
-    calc.add(num,num);    //加法算法
-    calc.sub(num,num);    //减法算法
-    calc.mult(num,num);   //乘法算法
-    calc.divi(num,num);   //除法算法
+    calculate.add(num,num);    //加法算法
+    calculate.sub(num,num);    //减法算法
+    calculate.mult(num,num);   //乘法算法
+    calculate.divi(num,num);   //除法算法
 ``` 
 
 
