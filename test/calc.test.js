@@ -1,4 +1,4 @@
-var calc = require('../index');
+var calc = require('../calc');
 var expect = require('chai').expect;
 
 describe('测试这个插件的运算',function(){
