@@ -17,5 +17,6 @@
     }
 
    this.calc = calculate;
+    // module.exports = calculate;
 
 })()
