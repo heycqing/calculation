@@ -1,17 +1,18 @@
 (function(global,factory){
     // commonJS 规范
-    if (typeof module === 'object' && module && module.exports) {
-        module.exports = factory(calculate);
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
+        module.exports = factory();
     }
     // AMD规范
     else if (typeof define === 'function' && define.amd) {
-        define([calculate], factory);
+        define(factory);
     }
     // 浏览器实现
     else {
-        global.calculate= factory(global.calculate);
+        global.calculate= factory();
     }
 })(this,(function(){
+    'use strict'
     var calculate = {
         
         add:function(a , b){
