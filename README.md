@@ -28,8 +28,19 @@
 
 ```
 
-2. 引入到 `js文件中`
+2. 使用 `npm包`下载，引入到 `js文件中`
 <br>
+
+#### 下载：
+```
+npm install --save-dev calculation-cqing  //安装到当前目录环境
+
+npm install -g calculation-cqing  //全局安装
+
+```
+<br>
+
+#### 使用方法：
 
  `var calc = require('calculate');`
 
