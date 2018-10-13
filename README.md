@@ -7,7 +7,11 @@
 <br>
 下载到本地之后，直接使用 `script` 标签进行引入；
 
- `<script src="../calculation-js.js"></script>`
+ `<script src="../calc.js"></script>`
+
+ 或者
+
+ `<script src="../calc.min.js"></script>``
 
 <br>
 
