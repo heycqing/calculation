@@ -7,6 +7,8 @@
 <br>
 下载到本地之后，直接使用 `script` 标签进行引入；
 
+<br>
+
  `<script src="../calc.js"></script>`
 
  或者
@@ -52,6 +54,12 @@ npm install -g calculation-cqing  //全局安装
 ``` 
 
 
+## 🌠 相关地址
+#### npm地址
+- [npm地址](https://www.npmjs.com/package/calculation-cqing)
+
+#### 手动下载
+- [最新版本](https://github.com/heycqing/calculation/releases/tag/v2.0.0)
 
 ## ↗️ 版本变迁
 - v1.0.0 
