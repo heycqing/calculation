@@ -11,7 +11,7 @@
 
  或者
 
- `<script src="../calc.min.js"></script>``
+ `<script src="../calc.min.js"></script>`
 
 <br>
 
