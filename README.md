@@ -1,7 +1,11 @@
 # 🐝 calculation
 自己封装的一个简单四则运算的 `javascript` 库，会精确到浮点类型，可用于常见的**金融领域的简单运算**
 
-## 🎒 calculation-js 用法
+> Remarks
+
+`npm` 的包名叫作 `calculation-cqing`;
+
+## 🎒 calculation-cqing 用法
 
 ### 1. 浏览器用法：
 
