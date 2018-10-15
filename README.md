@@ -40,7 +40,6 @@ npm install --save-dev calculation-cqing  //安装到当前目录环境
 npm install -g calculation-cqing  //全局安装
 
 ```
-<br>
 
 #### 使用方法：
 
