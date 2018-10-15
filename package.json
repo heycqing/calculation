@@ -1,6 +1,6 @@
 {
   "name": "calculation-cqing",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "description": "自己封装的一个简单javaScript四则运算库，精确到浮点型，可以常用语一般常见的金融领域的简单运算。",
   "main": "calc.js",
   "directories": {

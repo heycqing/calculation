@@ -1,5 +1,6 @@
-var calc = require('../calc');
+var Calculate = require('../calc');
 var expect = require('chai').expect;
+var calc = new Calculate();
 
 describe('测试这个插件的运算',function(){
     it('加法运算，3.0 + 4.1 应该等于 7.1 ', function(){

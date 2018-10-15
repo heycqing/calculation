@@ -9,20 +9,21 @@
 
 <br>
 
- `<script src="../calc.js"></script>`
+ ` <script src="../calc.js"></script> `
 
  或者
 
- `<script src="../calc.min.js"></script>`
+ ` <script src="../calc.min.js"></script> `
 
 <br>
 
 ```html
 
 <script>
-        // 整数
-        console.info('整数');
-        console.log(calculate.add(3,4))
+        
+        var calculate = new Calculate();  // 初始化对象
+
+        console.log(calculate.add(3,4))  // 使用
         console.log(calculate.sub(3,4))
         console.log(calculate.mult(3,4))
         console.log(calculate.divi(3,4))
@@ -34,6 +35,7 @@
 <br>
 
 #### 下载：
+
 ```
 npm install --save-dev calculation-cqing  //安装到当前目录环境
 
@@ -47,6 +49,7 @@ npm install -g calculation-cqing  //全局安装
  `var calc = require('calculate');`
 
 ```js
+    var calculate = new Calculate();  // 初始化对象
     calculate.add(num,num);    //加法算法
     calculate.sub(num,num);    //减法算法
     calculate.mult(num,num);   //乘法算法
@@ -75,3 +78,7 @@ npm install -g calculation-cqing  //全局安装
     + 精确到浮点数；
     + 添加新的 `mocha` 单元测试；
 
+- v2.1.0
+    + 优化 v2.0.0 代码；
+    + 限制使用者随意更改重写当前原型对象；
+    + 兼容只适用 ES5 的浏览器；

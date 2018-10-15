@@ -1,31 +1,28 @@
-/*
- * Author: cqing
- * Email: SiqingIII@163.com
- * Github: https://github.com/heycqing
- * Crate By cqing
- */
 (function(global,factory){
-    if(typeof exports === 'object' && typeof module !== 'undefined'){
+    // commonJS 规范
+    if (typeof exports === 'object' && typeof module !== 'undefined') {
         module.exports = factory();
-    }else if(typeof define === 'function' && defind.amd){
-        define(factory);
-    }else{
-        global.Calculate = factory();
     }
-})(this,function(){
+    // AMD规范
+    else if (typeof define === 'function' && define.amd) {
+        define(factory);
+    }
+    // 浏览器实现
+    else {
+        global.calculate= factory();
+    }
+})(this,(function(){
     'use strict'
-    /* Update V2.1.0
-     * 优化 v2.0.0 代码;
-     * 限制使用者随便更改重写当前原型对象;
-     * 兼容只适用ES5的浏览器;
-     */
-    function Calculate(){};
-    Calculate.prototype={
+    /* Update
+    * js的浮点数运算会不准确；想要准确地算出浮点数，可以直接把小数变化整数，再运算；
+    * 或者直接进行移位运算，这也是解决js浮点数不准确的方法；
+    */
+    var calculate = {
         numLength: function(num){
             return (num.toString().split('.')[1] || '').length;
         },
-        tenPow: function(a,b){
-            return Math.pow(10,Math.max(a,b));
+        tenPow: function(num_a,num_b){
+            return Math.pow(10,Math.max(num_a,num_b));
         },
         num2String:function(num){
             return num.toString();
@@ -69,10 +66,5 @@
             return (a2num / b2num) / Math.pow(10,(aLength - bLength));
         }
     }
-    Object.defineProperty(Calculate.prototype,'constructor',{
-        enumerable: false,
-        value: Calculate
-    })
-    return Calculate;
-
-})
+    return calculate;
+}))

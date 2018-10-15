@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-sCale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
@@ -10,6 +10,13 @@
     <script src="../calc.min.js"></script>
     <script>
         // 整数
+        var calculate = new Calculate();
+
+        calculate.prototype.say = function(){
+            consloe.log('hello'); //正常来说应该不能修改原型；
+        }
+        calculate.say();  // 结果是显示错误，和预期的假设成立；
+
         console.info('整数');
         console.log(calculate.add(3,4))
         console.log(calculate.sub(3,4))
