@@ -26,10 +26,10 @@
         
         var calculate = new Calculate();  // 初始化对象
 
-        console.log(calculate.add(3,4))  // 使用
-        console.log(calculate.sub(3,4))
-        console.log(calculate.mult(3,4))
-        console.log(calculate.divi(3,4))
+        console.log(calculate.add(3,4))   //加法算法
+        console.log(calculate.sub(3,4))   //减法算法
+        console.log(calculate.mult(3,4))  //乘法算法
+        console.log(calculate.divi(3,4))  //除法算法
 </script>
 
 ```
